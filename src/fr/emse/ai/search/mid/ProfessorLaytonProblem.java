@@ -83,4 +83,8 @@ public class ProfessorLaytonProblem implements Problem {
     public double getStepCost(Object start, Object action, Object dest) {
         return 1;
     }
+
+     public void blabla(){
+
+     }
 }
