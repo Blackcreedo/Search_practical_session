@@ -19,7 +19,7 @@ public class SimpleTest {
         //System.out.println(new BreadthFirstTreeSearch().solve(p2).pathToString());
         //System.out.println(new DepthFirstGraphSearch().solve(p2).pathToString());
         //System.out.println(new BreadthFirstGraphSearch().solve(p2).pathToString());
-        //System.out.println(new BreadthFirstGraphSearch().solve(p3).pathToString());
+        System.out.println(new BreadthFirstGraphSearch().solve(p3).pathToString());
         System.out.println(new DepthFirstGraphSearch().solve(p3).pathToString());
     }
 }
