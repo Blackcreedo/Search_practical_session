@@ -1,5 +1,6 @@
 package fr.emse.ai.search.mid;
 
+import fr.emse.ai.search.core.Node;
 import fr.emse.ai.search.core.Problem;
 
 import java.util.ArrayList;
@@ -18,6 +19,11 @@ public class ProfessorLaytonProblem implements Problem {
     @Override
     public boolean isGoal(Object state) {
         return state.equals(finalState);
+    }
+
+    public int heuristique(Node node){
+        SimpleState state = (SimpleState) node.getState();
+        return (3- state.missionariesRight)+(3- state.cannibalRight);
     }
 
     @Override
@@ -81,7 +87,4 @@ public class ProfessorLaytonProblem implements Problem {
         return 1;
     }
 
-     public void blabla(){
-
-     }
 }

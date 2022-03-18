@@ -1,10 +1,7 @@
 package fr.emse.ai.search.simple;
 
 import fr.emse.ai.search.mid.ProfessorLaytonProblem;
-import fr.emse.ai.search.solver.BreadthFirstGraphSearch;
-import fr.emse.ai.search.solver.BreadthFirstTreeSearch;
-import fr.emse.ai.search.solver.DepthFirstGraphSearch;
-import fr.emse.ai.search.solver.DepthFirstTreeSearch;
+import fr.emse.ai.search.solver.*;
 
 public class SimpleTest {
 
@@ -19,7 +16,8 @@ public class SimpleTest {
         //System.out.println(new BreadthFirstTreeSearch().solve(p2).pathToString());
         //System.out.println(new DepthFirstGraphSearch().solve(p2).pathToString());
         //System.out.println(new BreadthFirstGraphSearch().solve(p2).pathToString());
-        System.out.println(new BreadthFirstGraphSearch().solve(p3).pathToString());
-        System.out.println(new DepthFirstGraphSearch().solve(p3).pathToString());
+        //System.out.println(new BreadthFirstGraphSearch().solve(p3).pathToString());
+        //System.out.println(new DepthFirstGraphSearch().solve(p3).pathToString());
+        System.out.println(new AStarSolver().solve(p3).pathToString());
     }
 }

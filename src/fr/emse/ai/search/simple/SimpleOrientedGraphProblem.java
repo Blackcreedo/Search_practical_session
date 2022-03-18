@@ -1,5 +1,6 @@
 package fr.emse.ai.search.simple;
 
+import fr.emse.ai.search.core.Node;
 import fr.emse.ai.search.core.Problem;
 
 import java.util.ArrayList;
@@ -19,6 +20,7 @@ public class SimpleOrientedGraphProblem implements Problem {
     public boolean isGoal(Object state) {
         return state.equals(finalState);
     }
+
 
     @Override
     public Collection<Object> getActions(Object state) {
@@ -61,6 +63,11 @@ public class SimpleOrientedGraphProblem implements Problem {
 
     @Override
     public double getStepCost(Object start, Object action, Object dest) {
+        return 1;
+    }
+
+    @Override
+    public int heuristique(Node node) {
         return 1;
     }
 }

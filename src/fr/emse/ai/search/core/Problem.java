@@ -9,5 +9,5 @@ public interface Problem {
     public Collection<Object> getActions(Object state);
     public Object getNextState(Object state,Object action);
     public double getStepCost(Object start, Object action, Object dest);
-
+    public int heuristique(Node node);
 }

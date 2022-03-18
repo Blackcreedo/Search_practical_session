@@ -1,5 +1,6 @@
 package fr.emse.ai.search.simple;
 
+import fr.emse.ai.search.core.Node;
 import fr.emse.ai.search.core.Problem;
 import fr.emse.ai.search.simple.SimpleState;
 
@@ -69,6 +70,11 @@ public class SimpleGraphProblem implements Problem {
 
     @Override
     public double getStepCost(Object start, Object action, Object dest) {
+        return 1;
+    }
+
+    @Override
+    public int heuristique(Node node) {
         return 1;
     }
 }
