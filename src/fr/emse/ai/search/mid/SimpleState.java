@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class SimpleState {
-    public static final int cannibal_number = 3;
-    public static final int missionaries_number = 3;
 
     public int cannibalLeft;
     public int cannibalRight;
